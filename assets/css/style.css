@@ -107,10 +107,14 @@ letter-spacing: 2px;
     transition: all 0.3s;
 }
 
-.btn:hover {
+.btn:hover:not([disabled]) {
     background: goldenrod;
     color: white;
     border: 3px solid goldenrod
+}
+
+.btn:disabled {
+    cursor: no-drop;
 }
 
 #next-btn {
@@ -133,4 +137,13 @@ letter-spacing: 2px;
     background: goldenrod;
     color: white;
     border:  2px solid goldenrod;
+}
+
+.correct {
+    background: #9aeabc;
+}
+
+
+.incorrect {
+    background: #ff9393;
 }
