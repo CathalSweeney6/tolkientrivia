@@ -16,7 +16,7 @@ const questions = [
             { text: "Gothmog", correct: true},
         ]
     }, {
-        question: "What was the name of the Golden Hall that stood upon the green terrace of Edoras, capital city of the kingdom of Rohan?",
+        question: "What was the name of the Golden Hall that stood upon the green terrace of Edoras?",
         answers: [
             { text: "The Great Hall of Thingol", correct: false},
             { text: "Meduseld", correct: true},
@@ -32,7 +32,7 @@ const questions = [
             { text: "Gwaihir", correct: false},
         ]
     },  {
-        question: "J.R.R. Tolkien's novel, 'The Children of Húrin,' was heavily inspired by which Finnish epic-poem?",
+        question: "'The Children of Húrin', was heavily inspired by which Finnish epic-poem?",
         answers: [
             { text: "The Kalevala", correct: true},
             { text: "The Volsunga Saga", correct: false},
@@ -40,7 +40,7 @@ const questions = [
             { text: "The Prose Edda", correct: false},
         ]
     }, {
-        question: "Which Great-Spider devoured the light of the Two Trees of Valinor, at the behest of Melkor?",
+        question: "Which Great-Spider devoured the light of the Two Trees of Valinor?",
         answers: [
             { text: "Shelob", correct: false},
             { text: "Saenathra", correct: false},
@@ -72,6 +72,14 @@ const questions = [
             { text: "Celebrimbor", correct: false},
         ]
     }, {
+            question: "Gimli became the Lord of which realm, at the beginning of the Fourth Age?",
+            answers: [
+                { text: "Erebor", correct: false},
+                { text: "The Glittering Caves of Aglarond", correct: true},
+                { text: "Moria", correct: false},
+                { text: "The Iron Hills", correct: false},
+            ]
+    }, {
         question: "How many Rings of Power were forged?",
         answers: [
             { text: "Nine", correct: false},
@@ -80,11 +88,11 @@ const questions = [
             { text: "Twenty", correct: true},
         ]
     }, {
-        question: "Which Dwarf gifted Bilbo Baggins with a Mithril vest?",
+        question: "Who gifted Bilbo Baggins with a Mithril vest?",
         answers: [
             { text: "Balin, son of Fundin", correct: false},
             { text: "Glóin, son of Gróin", correct: false},
-            { text: "Thorin II “Oakenshield,” son of Thráin", correct: true},
+            { text: "Thorin II, son of Thráin", correct: true},
             { text: "Dwalin, son of Fundin", correct: false},
         ]
     }, {
@@ -120,22 +128,14 @@ const questions = [
             { text: "Elessar", correct: false},
         ]
     }, {
-        question: "When questioned in Buckland, which Hobbit informed a Black Rider that the Bagginses lived in Hobbiton?",
+        question: "Which Hobbit informed a Black Rider that the Bagginses lived in Hobbiton?",
         answers: [
             { text: "Odo Proudfoot", correct: false},
             { text: "Hamfast “Gaffer” Gamgee", correct: false},
             { text: "Sandyman", correct: false},
             { text: "Farmer Maggot", correct: true},
         ]
-    }, {
-        question: "What did the Black Speech inscription on the One Ring read?",
-        answers: [
-            { text: "Ash nazg gimbatul, Ash nazg durbatulûk, ash nazg thrakatulûk, agh burzum-ishi krimpatul", correct: false},
-            { text: "Ash nazg durbatulûk, ash nazg gimbatul, ash nazg thrakatulûk, agh burzum-ishi krimpatul", correct: true},
-            { text: "Ash nazg thrakatulûk, agh burzum-ishi krimpatul, ash nazg gimbatul, ash nazg durbatulûk", correct: false},
-            { text: "Ash nazg gimbatul, ash nazg durbatulûk, agh burzum-ishi krimpatul, ash nazg thrakatulûk", correct: false},
-        ]
-    }, {
+    },  {
         question: "What was the name of the largest Dragon in all of Middle-Earth?",
         answers: [
             { text: "Smaug", correct: false},
@@ -165,16 +165,46 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const correctsound = new Audio("assets/audio/gimli-sound-correct.mp3");
+const username = document.getElementById("username");
+const saveYourScore = document.getElementById("saveYourScore");
+const newestScore = localStorage.getItem("newestScore");
+const highscorelist = JSON.parse(localStorage.getItem("highScorelist")) || [];
 
-let currentQuestionIndex = 0;
+let shuffledQuestions, currentQuestionIndex;
 let score = 0;
 
-function startQuiz() {
-    currentQuestionIndex = 0;
-    score = 0;
-    nextButton.innerHTML = "NEXT >>";
-    showQuestion();
+nextButton.addEventListener('click', () => {
+    if (currentQuestionIndex < questions.length){
+       handleNextButton();
+  }else{
+    window.location.href = "quizgame.html";
+    }
+  });
+
+  function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < questions.length){
+       showQuestion();
+    } else {
+        showScore();
+    }
 }
+
+function startQuiz() {
+    resetState();
+    score = 0;
+    shuffledQuestions = questions.sort(() => Math.random() - .5);
+    currentQuestionIndex = 0;
+    nextButton.innerHTML = "NEXT >>";
+    document.getElementById("highscore").style.display = 'none';
+    setNextQuestion();
+  }
+
+  function setNextQuestion() {
+    resetState();
+    showQuestion(shuffledQuestions[currentQuestionIndex]);
+  }
 
 function  showQuestion() {
     resetState();
@@ -185,7 +215,7 @@ function  showQuestion() {
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
-        button.classList.add("btn");
+        button.classList.add("answer-variables");
         answerButtons.appendChild(button);
         if(answer.correct) {
             button.dataset.correct = answer.correct;
@@ -205,48 +235,54 @@ function  showQuestion() {
     function selectAnswer(event) {
         const selectedBtn = event.target;
         const isCorrect = selectedBtn.dataset.correct === "true";
+        nextButton.style.display = "block";
         if(isCorrect){
             selectedBtn.classList.add("correct");
             score++;
+            localStorage.setItem("newestScore", score);
         } else {
             selectedBtn.classList.add("incorrect");
         }
         Array.from(answerButtons.children).forEach(button => {
             if(button.dataset.correct === "true"){
-                button.classList.add("correct");
             }
             button.disabled = true;
         });
+    }
+
+    function showScore(){
+        resetState();
+        questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;   
+        nextButton.innerHTML = "PLAY AGAIN!";
         nextButton.style.display = "block";
+        document.getElementById("highscore").style.display = 'block';
+        username.addEventListener('keyup', () => {
+            saveScoreBtn.disabled = !username.value;
+        });
+    
+        saveHighScore = event =>
+            console.log("Your score was succesfully saved!");
+            e.preventDefault();
     }
 
+    username.addEventListener('keyup', () => {
+    saveScoreBtn.disabled = !username.value;
+});
 
-    function  showScore() {
-        resetState(); 
-        questionElement.innerHTML= `You scored ${score} out of ${questions.length}!`;
-        nextButton.innerHTML = "PLAY AGAIN";
-        nextButton.style.display ="block";
+saveHighScore = (e) => {
+    e.preventDefault();
 
-    }
+    const score = {
+        score: mostRecentScore,
+        name: username.value,
+    };
+    highScores.push(score);
+    highScores.sort((a, b) => b.score - a.score);
+    highScores.splice(5);
 
-    function handleNextButton() {
-        currentQuestionIndex++;
-        if(currentQuestionIndex < questions.length){
-            showQuestion();
-        } else {
-            showScore();
-        }
+    localStorage.setItem('highScores', JSON.stringify(highScores));
+    window.location.assign('/');
+};
 
-    }
-
-    nextButton.addEventListener("click", ()=>{
-        if(currentQuestionIndex < questions.length){
-            handleNextButton();
-        } else {
-            startQuiz();
-        }
-
-    });
 
     startQuiz();
-

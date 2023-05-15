@@ -12,23 +12,26 @@
     <title>Tolkien Trivia</title>
 </head>
 <body>
-    <img class="logo" src="assets/images/quizlogo.png" alt="logo">
-
-  
-    <div class="game-area">
-        <br>
-        <div class="quiz">
-        <h2 id="question">Question goes here</h2>
-        </div>
-        <br>
-        <div id="answer-buttons">
-            <button class="btn"> Answer 1</button>
-            <button class="btn"> Answer 2</button>
-            <button class="btn"> Answer 3</button>
-            <button class="btn"> Answer 4</button>
-        </div>
-        <button id="next-btn"> NEXT >> </button>
+<img class="logo" src="assets/images/quizlogo.png" alt="logo">
+  <div class="game-area">
+      <h1 id="question">Question goes here</h1>
+      <div id="answer-buttons">
+        <button class="answer-variables" onclick="audio.play();">Answer 1</button>
+        <button class="answer-variables" onclick="audio.play();">Answer 2</button>
+        <button class="answer-variables" onclick="audio.play();">Answer 3</button>
+        <button class="answer-variables" onclick="audio.play();">Answer 4</button>
+      </div>
+      <div id="highscore">
+        <h1 id="logscore">Log Your Score!</h1>
+        <form>
+            <input type="text" name="username" id="username" placeholder="Your Name..."> </input>
+        </form>
+        <button type="submit" id="saveYourScore"onclick="saveHighScore(event)"> SAVE SCORE! </button>
+        <a  id="scores-btn"  href="highscores.html"> HIGH SCORES! </a>
+      </div>
+      <button id="next-btn"> NEXT >></button>
     </div>
+
     <script src="assets/js/script.js"></script>
     <script src="https://kit.fontawesome.com/8376320c05.js" crossorigin="anonymous"></script>
 </body>

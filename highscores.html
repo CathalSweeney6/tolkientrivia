@@ -5,19 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Raleway:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Tolkien Trivia</title>
 </head>
 <body>
     <img class="logo" src="assets/images/quizlogo.png" alt="logo">
 
-    <div class="welcome-area">
-        <h3 id="welcome"> To begin your Quiz-quest, <br> Click on the One Ring...</h3>
-        <a href="quizgame.html">
-        <i id="onering" class="fa fa-duotone fa-ring fa-beat-fade"></i>
-        </a>
+    <div class="score-area">
+        <div class="highscorelist"></div>
+        <h1> <i class="fa-solid fa-dragon"></i> THE HALL OF CHAMPIONS <i class="fa-solid fa-dragon fa-flip-horizontal"></i> </h1>
+        <ul id="leaderboard"></ul>
+        <a  id="home-btn"  href="index.html"> HOME </a>
     </div>
+    <script src="highscores.js"></script>
     <script src="https://kit.fontawesome.com/8376320c05.js" crossorigin="anonymous"></script>
 </body>
 </html>

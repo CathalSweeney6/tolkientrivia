@@ -3,6 +3,8 @@ body {
     font-family: "Labo", sans-serif;
     color: goldenrod;
     text-align: center;
+    overflow-x: hidden; 
+    overflow-y: hidden;
 }
 
 /* --------- Heading */
@@ -11,6 +13,8 @@ body {
     width: auto;
     height: auto;
     padding-right: 5px;
+    margin-bottom: 34px;
+    margin-top: 30px;
 }
 
 /* --------- Game layout */
@@ -29,6 +33,7 @@ body {
     border-color: goldenrod;
     border-radius: 10px;
     padding: 1%;
+    box-shadow: 0 0 10px 10px black; 
 }
 
 .welcome-area a:link {
@@ -62,13 +67,13 @@ body {
 }
 
 #onering {
-    font-size: 100px;
+    font-size: 150px;
 }
 
 .game-area {
     background-color: black;
     box-sizing: border-box;
-    width: 75%;
+    width: 98%;
     height: 80vh;
     max-height: 600px;
     max-width: 830px;
@@ -79,41 +84,48 @@ body {
     border-color: goldenrod;
     border-radius: 10px;
     padding: 1%;
+    box-shadow: 0 0 10px 10px black; 
 }
 
 .quiz {
     padding: 20px 0;
 }
 
-.quiz h2 {
-font-size: 30px;
+.game-area h1 {
+font-size: 22px;
 color: #e8d9b8;
 font-weight: 600;
-letter-spacing: 2px;
+text-transform: uppercase; 
+line-height: 2;
+letter-spacing: 5px;
 }
 
-.btn {
+.answer-variables {
     background: #e8d9b8;
     color: black;
-    font-size: 25px;
-    font-weight: 500;
-    width: 100%;
+    font-size: 30px;
+    font-weight: 550;
+    width: 98%;
     border: 3px solid #974947;
-    padding: 10px;
+    padding: 18px;
     margin: 10px 0;
+    line-height: 30px;
     text-align: center;
     border-radius: 4px;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.1s;
+    letter-spacing: 6px;
 }
 
-.btn:hover:not([disabled]) {
-    background: goldenrod;
-    color: white;
-    border: 3px solid goldenrod
+.answer-variables:hover:not([disabled]) {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 #fd7c00;
+    transform: translateY(0.1rem);
+    transition: transform 150ms;
+    border: 3px solid goldenrod;
 }
 
-.btn:disabled {
+.answer-variables:disabled {
     cursor: no-drop;
 }
 
@@ -130,20 +142,185 @@ letter-spacing: 2px;
     padding: 10px;
     margin: 20px auto 0;
     cursor: pointer;
-    display: none;
+    display:none;
+    position: relative;
 }
+
 
 #next-btn:hover {
     background: goldenrod;
     color: white;
+    box-shadow:  0 0.4rem 1.4rem 0 darkgray;
     border:  2px solid goldenrod;
 }
 
 .correct {
-    background: #9aeabc;
+    background: #355e4c;
+    border: 3px solid #355e4c;
+    box-shadow: 0 0.4rem 1.4rem 0 #355e4c;
+    color: white;
+    cursor: no-drop;
+}
+
+.incorrect {
+    background: #974947;
+    border: 3px solid #974947;
+    box-shadow: 0 0.4rem 1.4rem 0 #974947;
+    color: white;
+    cursor: no-drop;
+}
+
+#next-btn {
+    background: #974947;
+    color: #e8d9b8;
+    font-family: "Instrument Serif";
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    width: 355px;
+    border:  2px solid darkgray;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display:none;
 }
 
 
-.incorrect {
-    background: #ff9393;
+#next-btn:hover {
+    background: goldenrod;
+    color: white;
+    box-shadow:  0 0.4rem 1.4rem 0 darkgray;
+    border:  2px solid goldenrod;
+}
+
+#logscore {
+    font-family: 'Instrument Serif';
+    font-size: 45px;
+}
+
+#username {
+    font-size: 30px;
+    padding: 20px;
+    border-radius: 4px;
+    border: 2px solid darkgray;
+}
+    
+#saveYourScore {
+    background: #974947;
+    color: #e8d9b8;
+    font-family: "Instrument Serif";
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    width: 355px;
+    border:  2px solid darkgray;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display:block;
+}
+
+
+#saveYourScore:hover {
+    background: goldenrod;
+    color: white;
+    box-shadow:  0 0.4rem 1.4rem 0 darkgray;
+    border:  2px solid goldenrod;
+}
+
+#leaderboard {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+    font-family:"Instrument Serif";
+    font-size: 18px;
+  }
+
+  .score-area {
+    background-color: black;
+    box-sizing: border-box;
+    width: 75%;
+    height: 65vh;
+    max-height: 600px;
+    max-width: 830px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: solid;
+    border-width: 6px;
+    border-color: goldenrod;
+    border-radius: 10px;
+    padding: 1%;
+    box-shadow: 0 0 10px 10px black; 
+}
+
+.score-area i {
+color: goldenrod;
+}
+
+.score-area h1 {
+font-family: "Instrument Serif";
+color:#e8d9b8;
+font-size: 40px;
+letter-spacing: 4px;
+}
+
+#leaderboard {
+    font-family: "Instrument Serif";
+    color:#e8d9b8;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 4rem;
+  }
+  
+
+#home-btn {
+    background: #974947;
+    color: #e8d9b8;
+    font-family: "Instrument Serif";
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 4px;
+    width: 355px;
+    border:  2px solid darkgray;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display:block;
+}
+
+
+#home-btn:hover {
+    background: goldenrod;
+    color: white;
+    box-shadow:  0 0.4rem 1.4rem 0 darkgray;
+    border:  2px solid goldenrod;
+}
+
+#scores-btn {
+    background: #974947;
+    color: #e8d9b8;
+    font-family: "Instrument Serif";
+    font-size: 25px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 4px;
+    width: 355px;
+    border:  2px solid darkgray;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 20px auto 0;
+    cursor: pointer;
+    display:block;
+}
+
+
+#scores-btn:hover {
+    background: goldenrod;
+    color: white;
+    box-shadow:  0 0.4rem 1.4rem 0 darkgray;
+    border:  2px solid goldenrod;
 }
