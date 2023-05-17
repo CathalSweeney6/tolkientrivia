@@ -91,6 +91,10 @@ body {
     padding: 20px 0;
 }
 
+#score {
+    font-size: 0;
+}
+
 .game-area h1 {
 font-size: 22px;
 color: #e8d9b8;
@@ -196,7 +200,7 @@ letter-spacing: 5px;
 
 #logscore {
     font-family: 'Instrument Serif';
-    font-size: 45px;
+    font-size: 30px;
 }
 
 #username {
@@ -274,6 +278,14 @@ letter-spacing: 4px;
     margin-bottom: 4rem;
   }
   
+.leaderboard {
+    font-size: 30px;
+     margin-bottom: 0.5rem; 
+}
+
+.leaderboard:hover {
+    transform: scale(1.025);
+}
 
 #home-btn {
     background: #974947;
@@ -308,7 +320,7 @@ letter-spacing: 4px;
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 4px;
-    width: 355px;
+    width: 332px;
     border:  2px solid darkgray;
     border-radius: 4px;
     padding: 10px;
@@ -318,9 +330,13 @@ letter-spacing: 4px;
 }
 
 
-#scores-btn:hover {
+#scores-btn:hover:not([disabled]) {
     background: goldenrod;
     color: white;
     box-shadow:  0 0.4rem 1.4rem 0 darkgray;
     border:  2px solid goldenrod;
+}
+
+#scores-btn:disabled {
+    cursor: no-drop;
 }

@@ -168,9 +168,14 @@ const nextButton = document.getElementById("next-btn");
 const correctsound = new Audio("assets/audio/gimli-sound-correct.mp3");
 const username = document.getElementById("username");
 const saveYourScore = document.getElementById("saveYourScore");
-const newestScore = localStorage.getItem("newestScore");
+const scoreText = document.getElementById("score");
+const latestScore = localStorage.getItem("latestScore");
+const finalScore = document.getElementById("finalScore");
+finalScore.innerText = latestScore;
 const highscorelist = JSON.parse(localStorage.getItem("highScorelist")) || [];
-
+const max_highscorelist = 6;
+const MAX_QUESTIONS = 20;
+const correct_answer = 0;
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
 
@@ -203,6 +208,7 @@ function startQuiz() {
 
   function setNextQuestion() {
     resetState();
+    localStorage.setItem("latestScore", score);
     showQuestion(shuffledQuestions[currentQuestionIndex]);
   }
 
@@ -239,7 +245,8 @@ function  showQuestion() {
         if(isCorrect){
             selectedBtn.classList.add("correct");
             score++;
-            localStorage.setItem("newestScore", score);
+            incrementScore(correct_answer);
+            localStorage.setItem("latestScore", score);
         } else {
             selectedBtn.classList.add("incorrect");
         }
@@ -250,39 +257,41 @@ function  showQuestion() {
         });
     }
 
+    incrementScore = num => {
+        score +=num;
+        scoreText.innerText = score;
+    }
+
     function showScore(){
         resetState();
-        questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;   
+        questionElement.innerHTML = `YOUR FINAL SCORE IS...`;   
         nextButton.innerHTML = "PLAY AGAIN!";
         nextButton.style.display = "block";
         document.getElementById("highscore").style.display = 'block';
         username.addEventListener('keyup', () => {
-            saveScoreBtn.disabled = !username.value;
+            saveYourScore.disabled = !username.value;
         });
-    
-        saveHighScore = event =>
-            console.log("Your score was succesfully saved!");
-            e.preventDefault();
+        
+
+        saveScore = (event) => {
+            console.log("Your Score Was Successfully Saved!")
+            event.preventDefault(); 
+
+            const score = {
+                score: latestScore,
+                name: username.value,
+            };
+        
+            highscorelist.push(score);
+            highscorelist.sort((a, b) => b.score - a.score);
+            highscorelist.splice(6);
+
+
+            localStorage.setItem("highscorelist", JSON.stringify(highscorelist));
+      
+                  window.location.
+            console.log(highscorelist);
+        };        
     }
-
-    username.addEventListener('keyup', () => {
-    saveScoreBtn.disabled = !username.value;
-});
-
-saveHighScore = (e) => {
-    e.preventDefault();
-
-    const score = {
-        score: mostRecentScore,
-        name: username.value,
-    };
-    highScores.push(score);
-    highScores.sort((a, b) => b.score - a.score);
-    highScores.splice(5);
-
-    localStorage.setItem('highScores', JSON.stringify(highScores));
-    window.location.assign('/');
-};
-
 
     startQuiz();
