@@ -340,3 +340,7 @@ letter-spacing: 4px;
 #scores-btn:disabled {
     cursor: no-drop;
 }
+
+#backgroundmusic {
+    display: none;
+}
