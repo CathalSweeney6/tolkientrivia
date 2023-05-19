@@ -201,6 +201,7 @@ function startQuiz() {
     shuffledQuestions = questions.sort(() => Math.random() - .5);
     currentQuestionIndex = 0;
     nextButton.innerHTML = "NEXT >>";
+    document.getElementById("score").style.display = 'none';
     document.getElementById("highscore").style.display = 'none';
     setNextQuestion();
   }
@@ -266,7 +267,9 @@ function  showQuestion() {
         questionElement.innerHTML = `YOUR FINAL SCORE IS...`;   
         nextButton.innerHTML = "PLAY AGAIN!";
         nextButton.style.display = "block";
+        document.getElementById("score").style.display = 'block';
         document.getElementById("highscore").style.display = 'block';
+        document.getElementById("finalScore").style.display = 'none';
         username.addEventListener('keyup', () => {
             saveYourScore.disabled = !username.value;
         });

@@ -91,8 +91,8 @@ body {
     padding: 20px 0;
 }
 
-#score {
-    font-size: 0;
+#finalscore {
+    font-size: 20px;
 }
 
 .game-area h1 {
