@@ -288,20 +288,21 @@ letter-spacing: 4px;
 }
 
 #home-btn {
-    background: #974947;
-    color: #e8d9b8;
+    background: black;
+    color: goldenrod;
+    border: 3px solid goldenrod;
     font-family: "Instrument Serif";
     font-size: 25px;
     font-weight: 500;
     text-decoration: none;
     letter-spacing: 4px;
     width: 355px;
-    border:  2px solid darkgray;
     border-radius: 4px;
     padding: 10px;
     margin: 20px auto 0;
     cursor: pointer;
     display:block;
+    margin-top: 700px;
 }
 
 
@@ -343,4 +344,14 @@ letter-spacing: 4px;
 
 #backgroundmusic {
     display: none;
+}
+
+.gandalf  {
+    background-image: url(https://media.tenor.com/VOdWjm2zbEAAAAAC/gandalf-sax-guy.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    width: 100vw;
+    justify-content: center;
 }
