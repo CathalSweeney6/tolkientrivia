@@ -1,3 +1,5 @@
+// Question list.
+
 const questions = [
     {
         question: "The Dúnedain were descendants of which race of people from the Second-Age?",
@@ -24,7 +26,7 @@ const questions = [
             { text: "Heorot", correct: false},
         ] 
     }, {
-        question: "Who was the chieftain of the Mearas?",
+        question: "Which creature was the chieftain of the Mearas?",
         answers: [
             { text: "Quickbeam", correct: false},
             { text: "Shadowfax", correct: true},
@@ -80,7 +82,7 @@ const questions = [
                 { text: "The Iron Hills", correct: false},
             ]
     }, {
-        question: "How many Rings of Power were forged?",
+        question: "How many Rings of Power were forged, in total?",
         answers: [
             { text: "Nine", correct: false},
             { text: "Seven", correct: false},
@@ -120,7 +122,7 @@ const questions = [
             { text: "A Stoor", correct: true},
         ]
     }, {
-        question: "Who founded the kingdom of Gondor?",
+        question: "Which Númenórean founded the kingdom of Gondor?",
         answers: [
             { text: "Isildur", correct: false},
             { text: "Anárion", correct: false},
@@ -162,6 +164,8 @@ const questions = [
     }, 
 ];
 
+// Consts.
+
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
@@ -177,6 +181,8 @@ const MAX_QUESTIONS = 20;
 const correct_answer = 0;
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
+
+// Next Button settings.
 
 nextButton.addEventListener('click', () => {
     if (currentQuestionIndex < questions.length){
@@ -195,6 +201,8 @@ nextButton.addEventListener('click', () => {
     }
 }
 
+// Starts the quizgame.html page.
+
 function startQuiz() {
     resetState();
     score = 0;
@@ -205,6 +213,8 @@ function startQuiz() {
     document.getElementById("highscore").style.display = 'none';
     setNextQuestion();
   }
+
+  // Sets the next question, at random, from the list od 20, and saves to local storage. 
 
   function setNextQuestion() {
     resetState();
@@ -218,6 +228,8 @@ function  showQuestion() {
     let questionNo = currentQuestion;
     questionElement.innerHTML = currentQuestion.question;
 
+    // Settings for the answern button function. 
+
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
@@ -230,6 +242,7 @@ function  showQuestion() {
     });
     }
 
+// Hides the Next Button at each question.
 
     function resetState() {
         nextButton.style.display = "none";
@@ -237,6 +250,8 @@ function  showQuestion() {
             answerButtons.removeChild(answerButtons.firstChild);
         }
     }
+
+    // Shows if answer is correct/incorrect and shows the Next Button.
 
     function selectAnswer(event) {
         const selectedBtn = event.target;
@@ -257,10 +272,14 @@ function  showQuestion() {
         });
     }
 
+    // Increments the score. 
+
     incrementScore = num => {
         score +=num;
         scoreText.innerText = score;
     }
+
+    // Final Score screen.
 
     function showScore(){
         resetState();
@@ -274,6 +293,7 @@ function  showQuestion() {
             saveYourScore.disabled = !username.value;
         });
         
+        // Saves score to leaderboard.
 
         saveScore = (event) => {
             console.log("Your Score Was Successfully Saved!")
@@ -283,17 +303,22 @@ function  showQuestion() {
                 score: latestScore,
                 name: username.value,
             };
+
+            // Leaderboard settings. 
         
             highscorelist.push(score);
             highscorelist.sort((a, b) => b.score - a.score);
             highscorelist.splice(6);
 
+            // Saves the high scores to local storage. 
 
             localStorage.setItem("highscorelist", JSON.stringify(highscorelist));
       
-                  window.location.
+            window.location.
             console.log(highscorelist);
+            // logs the highscore to the console. 
         };        
     }
-
+    
+    // Restarts the quiz. 
     startQuiz();

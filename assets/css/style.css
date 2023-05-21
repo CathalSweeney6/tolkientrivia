@@ -1,3 +1,5 @@
+/* Background layout  */
+
 body {
     background-image: url(../images/quizbackground.jpg);
     font-family: "Labo", sans-serif;
@@ -7,7 +9,7 @@ body {
     overflow-y: hidden;
 }
 
-/* --------- Heading */
+/* Quiz logo */
 
 .logo {
     width: auto;
@@ -17,7 +19,7 @@ body {
     margin-top: 30px;
 }
 
-/* --------- Game layout */
+/* box div layout */
 
 .welcome-area {
     background-color: black;
@@ -56,6 +58,8 @@ body {
     text-decoration: none;
 }
 
+/* Welcome message */
+
 #welcome {
     font-family: "Instrument Serif";
     font-size: 40px;
@@ -66,9 +70,13 @@ body {
     line-height: 2;
 }
 
+/* Button styling  */
+
 #onering {
     font-size: 150px;
 }
+
+/* Game layout */
 
 .game-area {
     background-color: black;
@@ -86,6 +94,8 @@ body {
     padding: 1%;
     box-shadow: 0 0 10px 10px black; 
 }
+
+/* Quiz element stylings */
 
 .quiz {
     padding: 20px 0;
@@ -129,9 +139,13 @@ letter-spacing: 5px;
     border: 3px solid goldenrod;
 }
 
+/* Stops the user from selecting more than one answer */
+
 .answer-variables:disabled {
     cursor: no-drop;
 }
+
+/* Next Button stylings */
 
 #next-btn {
     background: #974947;
@@ -158,6 +172,8 @@ letter-spacing: 5px;
     border:  2px solid goldenrod;
 }
 
+/* Correct answer stylings */
+
 .correct {
     background: #355e4c;
     border: 3px solid #355e4c;
@@ -166,6 +182,8 @@ letter-spacing: 5px;
     cursor: no-drop;
 }
 
+/* Incorrect answer stylings */
+
 .incorrect {
     background: #974947;
     border: 3px solid #974947;
@@ -173,6 +191,10 @@ letter-spacing: 5px;
     color: white;
     cursor: no-drop;
 }
+
+
+/* Stylings for the Next Button, when styled as the "Play Again" button. */
+
 
 #next-btn {
     background: #974947;
@@ -198,10 +220,14 @@ letter-spacing: 5px;
     border:  2px solid goldenrod;
 }
 
+/* End of game message. */
+
 #logscore {
     font-family: 'Instrument Serif';
     font-size: 30px;
 }
+
+/* Form stylings */
 
 #username {
     font-size: 30px;
@@ -209,7 +235,9 @@ letter-spacing: 5px;
     border-radius: 4px;
     border: 2px solid darkgray;
 }
-    
+
+/* Save score button stylings */
+
 #saveYourScore {
     background: #974947;
     color: #e8d9b8;
@@ -234,6 +262,8 @@ letter-spacing: 5px;
     border:  2px solid goldenrod;
 }
 
+/* Leaderboard styling */
+
 #leaderboard {
     list-style: none;
     padding-left: 0;
@@ -241,6 +271,8 @@ letter-spacing: 5px;
     font-family:"Instrument Serif";
     font-size: 18px;
   }
+
+  /* Leaderboard div box stylings */
 
   .score-area {
     background-color: black;
@@ -270,6 +302,8 @@ font-size: 40px;
 letter-spacing: 4px;
 }
 
+/* Leaderboard font stylings */
+
 #leaderboard {
     font-family: "Instrument Serif";
     color:#e8d9b8;
@@ -286,6 +320,8 @@ letter-spacing: 4px;
 .leaderboard:hover {
     transform: scale(1.025);
 }
+
+/* Home Button stylings */
 
 #home-btn {
     background: black;
@@ -313,6 +349,8 @@ letter-spacing: 4px;
     border:  2px solid goldenrod;
 }
 
+/* View High Scores Button stylings */
+
 #scores-btn {
     background: #974947;
     color: #e8d9b8;
@@ -330,21 +368,13 @@ letter-spacing: 4px;
     display:block;
 }
 
-
-#scores-btn:hover:not([disabled]) {
-    background: goldenrod;
-    color: white;
-    box-shadow:  0 0.4rem 1.4rem 0 darkgray;
-    border:  2px solid goldenrod;
-}
-
-#scores-btn:disabled {
-    cursor: no-drop;
-}
+/* Game music, no display */
 
 #backgroundmusic {
     display: none;
 }
+
+/* Bonus page stylings */
 
 #sax-btn {
     text-decoration: none;
@@ -371,6 +401,8 @@ letter-spacing: 4px;
     border:  2px solid goldenrod;
 }
 
+/* Bonus background gif stylings */
+
 .gandalf  {
     background-image: url(https://media.tenor.com/VOdWjm2zbEAAAAAC/gandalf-sax-guy.gif);
     background-repeat: no-repeat;
@@ -380,3 +412,5 @@ letter-spacing: 4px;
     width: 100vw;
     justify-content: center;
 }
+
+/* Media queries */
