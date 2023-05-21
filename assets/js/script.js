@@ -175,7 +175,7 @@ const scoreText = document.getElementById("score");
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
 finalScore.innerText = latestScore;
-const highscorelist = JSON.parse(localStorage.getItem("highScorelist")) || [];
+const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const max_highscorelist = 6;
 const MAX_QUESTIONS = 20;
 const correct_answer = 0;
@@ -295,7 +295,7 @@ function  showQuestion() {
         
         // Saves score to leaderboard.
 
-        saveScore = (event) => {
+        saveScore = event => {
             console.log("Your Score Was Successfully Saved!")
             event.preventDefault(); 
 
@@ -314,7 +314,6 @@ function  showQuestion() {
 
             localStorage.setItem("highscorelist", JSON.stringify(highscorelist));
       
-            window.location.
             console.log(highscorelist);
             // logs the highscore to the console. 
         };        
