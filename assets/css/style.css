@@ -311,7 +311,7 @@ letter-spacing: 4px;
     margin: 20px auto 0;
     cursor: pointer;
     display:block;
-    margin-top: 600px;
+    margin-top: 594px;
 }
 
 
@@ -378,8 +378,6 @@ letter-spacing: 4px;
 
 .gandalf  {
     background-image: url(https://media.tenor.com/VOdWjm2zbEAAAAAC/gandalf-sax-guy.gif);
-    background-repeat: no-repeat;
-    background-size: cover;
     height: 100vh;
     width: 100vw;
     width: 100vw;
@@ -387,3 +385,75 @@ letter-spacing: 4px;
 }
 
 /* Media queries */
+
+media screen and (max-width: 1024px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .leaderboard {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+
+    .logo {
+        margin-top: 120px;
+        margin-bottom: 205px;
+    }
+
+    .welcome-area, .game-area, .score-area {
+        width: 155%;
+        height: 85vh;
+}
+
+
+    #welcome {
+    font-size: 48px;
+    }
+
+    .game-area h1 {
+    font-size: 25px;
+    margin-top: 45px;
+    }
+
+    .answer-variables {
+        font-size: 35px;
+        padding: 6px;
+}
+
+    #next-btn {
+    font-size: 25px;
+    }
+
+.score-area h1 {
+    font-size: 30px;
+}
+
+.leaderboard {
+    font-size: 35px;
+}
+
+
+#sax-btn {
+    font-size: 28px;
+}
+}
+
+@media screen and (max-width: 375px) {
+
+    .welcome-area, .game-area, .score-area {
+        width: 176%;
+        height: 85vh;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .welcome-area, .game-area, .score-area {
+        width: 208%;
+        height: 85vh;
+    }
+}
