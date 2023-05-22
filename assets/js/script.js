@@ -403,14 +403,15 @@ let shuffledQuestions, currentQuestionIndex;
 let score = 0;
 
 // Next Button settings.
-
-nextButton.addEventListener('click', () => {
-    if (currentQuestionIndex < questions.length) {
-        handleNextButton();
-    } else {
-        window.location.href = "quizgame.html";
-    }
-});
+if (nextButton) {
+    nextButton.addEventListener('click', () => {
+        if (currentQuestionIndex < questions.length) {
+            handleNextButton();
+        } else {
+            window.location.href = "quizgame.html";
+        }
+    });
+}
 
 function handleNextButton() {
     currentQuestionIndex++;
