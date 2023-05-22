@@ -243,6 +243,7 @@ letter-spacing: 5px;
     margin-bottom: 4rem;
     font-family:"Instrument Serif";
     font-size: 18px;
+    text-transform: uppercase;
   }
 
   /* Leaderboard div box stylings */
