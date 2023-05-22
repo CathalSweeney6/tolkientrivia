@@ -387,6 +387,7 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 const username = document.getElementById("username");
 const saveYourScore = document.getElementById("saveYourScore");
+const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const scoreText = document.getElementById("score");
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
