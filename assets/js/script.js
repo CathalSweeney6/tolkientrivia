@@ -391,9 +391,6 @@ const scoreText = document.getElementById("score");
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
 if (latestScore != null) {
-    latestScore.property = 'value';
-  }
-if (latestScore) {
     finalScore.innerText = latestScore;
 }
 const max_highscorelist = 6;
