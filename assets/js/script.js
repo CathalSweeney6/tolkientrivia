@@ -385,6 +385,8 @@ const questions = [{
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+let shuffledQuestions, currentQuestionIndex;
+let score = 0;
 const username = document.getElementById("username");
 const saveYourScore = document.getElementById("saveYourScore");
 const scoreText = document.getElementById("score");
@@ -396,8 +398,6 @@ let latestScore = finalScore.innerText;
 const max_highscorelist = 6;
 const MAX_QUESTIONS = 20;
 const correct_answer = 0;
-let shuffledQuestions, currentQuestionIndex;
-let score = 0;
 
 // Next Button settings.
 if (nextButton) {
