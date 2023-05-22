@@ -391,7 +391,7 @@ const scoreText = document.getElementById("score");
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
 if (latestScore != null) {
-    document.getElementById("finalScore").innerText = "latestScore";
+    document.getElementById("finalScore").innerText = `${latestScore}`;
 }
 const max_highscorelist = 6;
 const MAX_QUESTIONS = 20;
