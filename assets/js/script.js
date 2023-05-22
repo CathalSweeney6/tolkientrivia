@@ -1,4 +1,4 @@
-// Question list.
+// Questions.
 
 const questions = [{
     question: "The Dúnedain were descendants of which race of people from the Second-Age?",
