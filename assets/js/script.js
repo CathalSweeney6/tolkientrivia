@@ -455,7 +455,7 @@ function showQuestion() {
 // Hides the Next Button at each question.
 
 function resetState() {
-    nextButton.style.display = "none";
+    let nextButton.style.display = "none";
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
@@ -503,7 +503,7 @@ function showScore() {
     const finalScore = document.getElementById("finalScore") 
     if (finalScore) {
         finalScore.innerText = latestScore;
-    }
+    Z}
     document.getElementById("score").style.display = 'block';
     document.getElementById("highscore").style.display = 'block';
     document.getElementById("finalScore").style.display = 'none';
