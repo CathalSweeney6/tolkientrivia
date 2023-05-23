@@ -387,6 +387,15 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
+const username = document.getElementById("username");
+const saveYourScore = document.getElementById("saveYourScore");
+const scoreText = document.getElementById("score");
+const latestScore = localStorage.getItem("latestScore");
+const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
+const finalScore = document.getElementById("finalScore") 
+if (finalScore) {
+finalScore.innerText = latestScore;
+}
 const max_highscorelist = 6;
 const MAX_QUESTIONS = 20;
 const correct_answer = 0;
@@ -495,15 +504,6 @@ function showScore() {
     questionElement.innerHTML = `YOUR FINAL SCORE IS...`;
     nextButton.innerHTML = "PLAY AGAIN!";
     nextButton.style.display = "block";
-    const username = document.getElementById("username");
-    const saveYourScore = document.getElementById("saveYourScore");
-    const scoreText = document.getElementById("score");
-    const latestScore = localStorage.getItem("latestScore");
-    const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
-    const finalScore = document.getElementById("finalScore") 
-    if (finalScore) {
-        finalScore.innerText = latestScore;
-    }
     document.getElementById("score").style.display = 'block';
     document.getElementById("highscore").style.display = 'block';
     document.getElementById("finalScore").style.display = 'none';
