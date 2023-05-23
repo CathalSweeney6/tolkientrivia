@@ -390,12 +390,19 @@ let score = 0;
 const username = document.getElementById("username");
 const saveYourScore = document.getElementById("saveYourScore");
 const scoreText = document.getElementById("score");
-const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
-if(latestScore) {
+function latestScore() {
 finalScore.innerText = latestScore;
 }
+const leaderboard = document.getElementById("leaderboard");
+const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
+// leaderboard contents. 
+
+leaderboard.innerHTML = highscorelist.map(score => {
+    return `<li class="leaderboard">${score.name} - ${score.score} </li>`;
+  })
+  .join("");
 const max_highscorelist = 6;
 const MAX_QUESTIONS = 20;
 const correct_answer = 0;
