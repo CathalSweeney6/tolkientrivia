@@ -503,7 +503,7 @@ function showScore() {
     const finalScore = document.getElementById("finalScore") 
     if (finalScore) {
         finalScore.innerText = latestScore;
-    Z}
+    }
     document.getElementById("score").style.display = 'block';
     document.getElementById("highscore").style.display = 'block';
     document.getElementById("finalScore").style.display = 'none';
