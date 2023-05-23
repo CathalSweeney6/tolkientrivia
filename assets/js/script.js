@@ -387,13 +387,13 @@ const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
-const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const username = document.getElementById("username");
 const saveYourScore = document.getElementById("saveYourScore");
 const scoreText = document.getElementById("score");
 const finalScore = document.getElementById("finalScore");
 const latestScore = localStorage.getItem("latestScore");
-finalScore.textContent = latestScore;
+finalScore.textContent = "latestScore";
+const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const max_highscorelist = 6;
 const MAX_QUESTIONS = 20;
 const correct_answer = 0;
@@ -504,7 +504,7 @@ function showScore() {
     nextButton.style.display = "block";
     document.getElementById("score").style.display = 'block';
     document.getElementById("highscore").style.display = 'block';
-    document.getElementById("finalScore").style.display = 'block';
+    document.getElementById("finalScore").style.display = 'none';
     username.addEventListener('keyup', () => {
         saveYourScore.disabled = !username.value;
     });
