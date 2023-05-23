@@ -394,7 +394,7 @@ const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
 if (finalScore) {
-finalScore.innerText = latestScore;
+finalScore.innerText = score;
 }
 console.log(latestScore);
 const max_highscorelist = 6;
@@ -482,7 +482,7 @@ function selectAnswer(event) {
         score++;
         console.log(score)
      //   incrementScore(correct_answer);
-        localStorage.setItem("latestScore", score);
+        localStorage.setItem("score", score);
     } else {
         selectedBtn.classList.add("incorrect");
     }
