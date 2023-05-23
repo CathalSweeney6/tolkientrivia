@@ -494,11 +494,11 @@ function selectAnswer(event) {
 
 // Increments the score. 
 
-incrementScore = num => {
-    score += num;
-    scoreText.innerText = score;
+// incrementScore = num => {
+    //score += num;
+  //  scoreText.innerText = score;
 }
-console.log(incrementScore);
+//console.log(incrementScore);
 
 // Final Score screen.
 
