@@ -504,7 +504,7 @@ function showScore() {
     nextButton.style.display = "block";
     document.getElementById("score").style.display = 'block';
     document.getElementById("highscore").style.display = 'block';
-    document.getElementById("finalScore").style.display = 'none';
+    document.getElementById("finalScore").style.display = 'block';
     username.addEventListener('keyup', () => {
         saveYourScore.disabled = !username.value;
     });
