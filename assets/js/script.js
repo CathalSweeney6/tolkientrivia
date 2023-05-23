@@ -394,7 +394,7 @@ const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
 if (finalScore) {
-finalScore.innerText = score;
+finalScore.innerText = latestScore;
 }
 console.log(latestScore);
 const max_highscorelist = 6;
@@ -481,8 +481,8 @@ function selectAnswer(event) {
         selectedBtn.classList.add("correct");
         score++;
         console.log(score)
-     //   incrementScore(correct_answer);
-        localStorage.setItem("score", score);
+        incrementScore(correct_answer);
+        localStorage.setItem("latestScore", score);
     } else {
         selectedBtn.classList.add("incorrect");
     }
@@ -497,8 +497,8 @@ function selectAnswer(event) {
 // incrementScore = num => {
     //score += num;
   //  scoreText.innerText = score;
-// }
-//console.log(incrementScore);
+}
+console.log(incrementScore);
 
 // Final Score screen.
 
