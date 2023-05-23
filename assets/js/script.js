@@ -457,9 +457,7 @@ function showQuestion() {
 function resetState() {
     if (nextButton) {
     nextButton.style.display = "none";
-    }
-    while (answerButtons.firstChild) {
-        answerButtons.removeChild(answerButtons.firstChild);
+    answerButtons.removeChild(answerButtons.firstChild);
     }
 }
 
