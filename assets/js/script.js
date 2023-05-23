@@ -393,6 +393,7 @@ const scoreText = document.getElementById("score");
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
 finalScore.innerText = document.getElementById("latestScore");
+const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const max_highscorelist = 6;
 const MAX_QUESTIONS = 20;
 const correct_answer = 0;
