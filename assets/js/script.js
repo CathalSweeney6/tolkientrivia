@@ -455,7 +455,7 @@ function showQuestion() {
 // Hides the Next Button at each question.
 
 function resetState() {
-    nextButton.style.display = "none";
+    nextButton.style.display = "none"
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
