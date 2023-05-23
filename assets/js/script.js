@@ -526,10 +526,6 @@ function showScore() {
         highscorelist.sort((a, b) => b.score - a.score);
         highscorelist.splice(6);
 
-        // Saves the high scores to local storage. 
-
-        localStorage.setItem("highscorelist", JSON.stringify(highscorelist));
-
         console.log(highscorelist);
         // logs the highscore to the console. 
     };
