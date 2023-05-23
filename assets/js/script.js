@@ -391,8 +391,11 @@ const username = document.getElementById("username");
 const saveYourScore = document.getElementById("saveYourScore");
 const scoreText = document.getElementById("score");
 const latestScore = localStorage.getItem("latestScore");
+const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const finalScore = document.getElementById("finalScore");
-finalScore.innerText = latestScore.text
+if (latestScore) {
+let latestScore = finalScore.innerText;
+}
 const max_highscorelist = 6;
 const MAX_QUESTIONS = 20;
 const correct_answer = 0;
@@ -524,6 +527,10 @@ function showScore() {
         highscorelist.push(score);
         highscorelist.sort((a, b) => b.score - a.score);
         highscorelist.splice(6);
+
+        // Saves the high scores to local storage. 
+
+        localStorage.setItem("highscorelist", JSON.stringify(highscorelist));
 
         console.log(highscorelist);
         // logs the highscore to the console. 
