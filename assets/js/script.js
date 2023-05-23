@@ -390,7 +390,6 @@ let score = 0;
 const username = document.getElementById("username");
 const saveYourScore = document.getElementById("saveYourScore");
 const scoreText = document.getElementById("score");
-const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
 if (latestScore) {
