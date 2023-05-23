@@ -480,6 +480,7 @@ function selectAnswer(event) {
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
+        console.log(score);
         // incrementScore(correct_answer);
         localStorage.setItem("latestScore", score);
     } else {
@@ -504,9 +505,10 @@ function showScore() {
     questionElement.innerHTML = `YOUR FINAL SCORE IS...`;
     nextButton.innerHTML = "PLAY AGAIN!";
     nextButton.style.display = "block";
+    inalScore = parseInt(document.getElementById("score").innerText);
     document.getElementById("score").style.display = 'block';
     document.getElementById("highscore").style.display = 'block';
-    document.getElementById("finalScore").style.display = 'none';
+    document.getElementById("finalScore").style.display = 'block';
     username.addEventListener('keyup', () => {
         saveYourScore.disabled = !username.value;
     });
