@@ -481,7 +481,7 @@ function selectAnswer(event) {
         selectedBtn.classList.add("correct");
         score++;
         console.log(score)
-        incrementScore(correct_answer);
+     //   incrementScore(correct_answer);
         localStorage.setItem("latestScore", score);
     } else {
         selectedBtn.classList.add("incorrect");
@@ -497,7 +497,7 @@ function selectAnswer(event) {
 // incrementScore = num => {
     //score += num;
   //  scoreText.innerText = score;
-}
+// }
 //console.log(incrementScore);
 
 // Final Score screen.
