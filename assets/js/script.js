@@ -390,12 +390,9 @@ let score = 0;
 const username = document.getElementById("username");
 const saveYourScore = document.getElementById("saveYourScore");
 const scoreText = document.getElementById("score");
-const highscorelist = JSON.parse(localStorage.getItem("highscorelist")) || [];
 const latestScore = localStorage.getItem("latestScore");
 const finalScore = document.getElementById("finalScore");
-if(latestScore) {
 finalScore.innerText = latestScore;
-}
 const max_highscorelist = 6;
 const MAX_QUESTIONS = 20;
 const correct_answer = 0;
@@ -506,7 +503,7 @@ function showScore() {
     nextButton.style.display = "block";
     document.getElementById("score").style.display = 'block';
     document.getElementById("highscore").style.display = 'block';
-    document.getElementById("finalScore").style.display = 'blocks';
+    document.getElementById("finalScore").style.display = 'none';
     username.addEventListener('keyup', () => {
         saveYourScore.disabled = !username.value;
     });
