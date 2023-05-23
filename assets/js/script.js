@@ -497,7 +497,7 @@ function selectAnswer(event) {
 // incrementScore = num => {
     //score += num;
   //  scoreText.innerText = score;
-}
+// }
 console.log(incrementScore);
 
 // Final Score screen.
