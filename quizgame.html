@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Raleway:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif&family=Raleway:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Tolkien Trivia</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Tolkien Trivia</title>
 </head>
+
 <body>
-<img class="logo" src="assets/images/quizlogo.png" alt="logo">
+  <img class="logo" src="assets/images/quizlogo.png" alt="logo">
   <div class="game-area">
     <!--Question text-->
-      <h1 id="question">Question goes here</h1>
-      <!-- Answer variables-->
-      <div id="answer-buttons">
-        <button class="answer-variables" onclick="audio.play();">Answer 1</button>
-        <button class="answer-variables" onclick="audio.play();">Answer 2</button>
-        <button class="answer-variables" onclick="audio.play();">Answer 3</button>
-        <button class="answer-variables" onclick="audio.play();">Answer 4</button>
-      </div>
-        <!--  High score area, loads at the end of the game.-->
-      <div id="highscore">
-        <h1 id="finalScore"></h1>
-        <a  id="sax-btn"  href="gandalfsax.html"> CLAIM YOUR SPECIAL PRIZE! </a>
-      </div>
-      <button id="next-btn"> NEXT >></button>
+    <h1 id="question">Question goes here</h1>
+    <!-- Answer variables-->
+    <div id="answer-buttons">
+      <button class="answer-variables" onclick="audio.play();">Answer 1</button>
+      <button class="answer-variables" onclick="audio.play();">Answer 2</button>
+      <button class="answer-variables" onclick="audio.play();">Answer 3</button>
+      <button class="answer-variables" onclick="audio.play();">Answer 4</button>
     </div>
-    <audio id="backgroundmusic" controls autoplay loop>
-      <source src="./assets/audio/Adventure - Royalty Free Medieval Fantasy Music.mp3">
-    </audio>
+    <!--  High score area, loads at the end of the game.-->
+    <div id="highscore">
+      <h1 id="finalScore"></h1>
+      <a id="sax-btn" href="gandalfsax.html"> CLAIM YOUR SPECIAL PRIZE! </a>
+    </div>
+    <button id="next-btn"> NEXT >></button>
+  </div>
+  <audio id="backgroundmusic" controls autoplay loop>
+    <source src="./assets/audio/Adventure - Royalty Free Medieval Fantasy Music.mp3">
+  </audio>
 
-    <script src="https://kit.fontawesome.com/8376320c05.js" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"> window.onload = function() {} </script>
+  <script src="https://kit.fontawesome.com/8376320c05.js" crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js">
+    window.onload = function () {}
+  </script>
 </body>
+
 </html>
