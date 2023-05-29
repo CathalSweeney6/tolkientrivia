@@ -285,6 +285,11 @@ body {
 
 @media screen and (max-width: 425px) {
 
+    body {
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
     .logo {
         width: 364px;
         height: 84px;
@@ -335,6 +340,11 @@ body {
 
 @media screen and (max-width: 375px) {
 
+    body {
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+    
     .logo {
         width: 324px;
     }
@@ -366,6 +376,12 @@ body {
 
 
 @media screen and (max-width: 360px) {
+
+    body {
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+
     .welcome-area,
     .game-area,
     .score-area {
@@ -403,6 +419,11 @@ body {
 
 @media screen and (max-width: 320px) {
 
+    body {
+        overflow-x: auto;
+        overflow-y: auto;
+    }
+    
     .logo {
         width: 300px;
     }
