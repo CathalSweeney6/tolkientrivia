@@ -2,6 +2,10 @@
 
 body {
     background-image: url(../images/quizbackground.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     font-family: "Labo", sans-serif;
     color: goldenrod;
     text-align: center;
