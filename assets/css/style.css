@@ -272,6 +272,7 @@ body {
     .logo {
         height: 100px;
         width: 400px;
+        margin-top: 0px;
     }
 
     #welcome {
@@ -289,6 +290,7 @@ body {
         width: 364px;
         height: 84px;
         margin-bottom: 50px;
+        margin-top: 0px;
     }
 
     .welcome-area,
@@ -339,6 +341,7 @@ body {
 
     .logo {
         width: 324px;
+        margin-top: 0px;
     }
 
     .welcome-area,
@@ -377,6 +380,11 @@ body {
 
 
 @media screen and (max-width: 360px) {
+
+    .logo {
+        margin-top: 0px;
+    }
+
     .welcome-area {
         height: 55vh; 
     }
@@ -419,6 +427,7 @@ body {
 
     .logo {
         width: 300px;
+        margin-top: 0px;
     }
 
     .welcome-area,
