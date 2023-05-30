@@ -252,7 +252,7 @@ body {
 
 .gandalf {
     background-image: url(https://media.tenor.com/VOdWjm2zbEAAAAAC/gandalf-sax-guy.gif);
-    height: 26vh;
+    height: 62vh;
     width: 100vw;
     background-position: center;
 }
@@ -265,9 +265,20 @@ body {
 
 @media screen and (max-width: 768px) {
 
+    .game-area h1 {
+        font-size: 16px;
+    }
+
     .gandalf {
         height: 40vh;
         background-size: cover;
+    }
+}
+
+@media screen and (max-width: 743px) and (min-width:663px) {
+
+    #welcome {
+         font-size: 30px;
     }
 }
 
@@ -285,6 +296,35 @@ body {
 
     .answer-variables {
         font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 657px) and (min-width:597px) {
+
+    #welcome {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 597px) and (min-width:321px) {
+
+    #welcome {
+    font-size: 25px;
+    }
+}
+
+
+@media screen and (max-width: 596px) and (min-width:426px) {
+
+    #welcome {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 571px) and (min-width:426px) {
+
+    #welcome {
+        font-size: 17px;
     }
 }
 
@@ -351,6 +391,12 @@ body {
         width: 340px;
     }
 }
+@media screen and (max-width: 375px) and (min-width:360px) {
+
+    .gandalf {
+        height: 21vh;
+    }
+}
 
 @media screen and (max-width: 375px) {
 
@@ -385,14 +431,14 @@ body {
     #sax-btn {
         width: 308px;
     }
-
-    .gandalf {
-         height: 20vh;
-        overflow-x: hidden;
-        overflow-y: hidden;
-        }
 }
 
+@media screen and (max-width: 370px) and (min-width:320px) {
+
+    #next-btn {
+        width: 275px;
+    }
+}
 
 @media screen and (max-width: 360px) {
 
@@ -423,10 +469,6 @@ body {
         padding: 0;
     }
 
-    #next-btn {
-        width: 320px;
-    }
-
     #sax-btn {
         width: 296px;
         font-size: 60px;
@@ -437,11 +479,41 @@ body {
     }
 }
 
+@media screen and (max-width: 397px) and (min-width:321px) {
+
+   #welcome {
+    font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 340px) and (min-width:321px) {
+
+    .welcome-area,
+    .game-area,
+    .score-area {
+        width: 95%;
+    }
+}
+
+
+@media screen and (max-width: 339px) and (min-width:321px) {
+
+    .welcome-area,
+    .game-area,
+    .score-area {
+        width: 100%;
+    }
+
+    #welcome {
+        font-size: 16px;
+        }
+}
+
 
 @media screen and (max-width: 320px) {
 
     .logo {
-        width: 300px;
+        width: 304px;
         margin-top: 0px;
     }
 
@@ -466,10 +538,6 @@ body {
 
     .answer-variables {
         font-size: 12px;
-    }
-
-    #next-btn {
-        width: 282px;
     }
 
     #sax-btn {
