@@ -2,9 +2,6 @@
 
 body {
     background-image: url(../images/quizbackground.jpg);
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     font-family: "Labo", sans-serif;
     color: goldenrod;
@@ -170,7 +167,7 @@ body {
 /* Stylings for the Next Button, when styled as the "Play Again" button. */
 
 
-#next-btn {
+#answer-buttons {
     background: #974947;
     color: #e8d9b8;
     font-family: "Instrument Serif";

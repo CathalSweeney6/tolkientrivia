@@ -11,7 +11,7 @@ I wanted the aesthetic of the website to match that of 'The Lord of the Rings' m
 
 <img src="assets/images/balsamiqwireframe.png" width=600 height=400>
 
- I created the quiz's logo by downloading the 'Ringbearer' font from dafont.com. This font is a based off of the original font used in the trilogy's movie posters. I formatted the logo in Adobe Photoshop, where I embossed and added an outline and shadow to  the final logo. 
+ I created the quiz's logo by downloading the 'Ringbearer' font from [dafont.com](https://www.dafont.com/ringbearer.font). This font is a based off of the original font used in the trilogy's movie posters. I formatted the logo in Adobe Photoshop, where I embossed and added an outline and shadow to  the final logo. 
 
  Original logo.
 
@@ -20,6 +20,7 @@ I wanted the aesthetic of the website to match that of 'The Lord of the Rings' m
  Final logo, editied through Adobe Photoshop.
 
  <img src="assets/images/quizlogo.png" width=600 height=400>
+
 
  ## Final Layout
 
@@ -66,11 +67,19 @@ Edited Final Background
 
 ### Quiz Game
 
-* When the user clicks on the One Ring icon on the home screen, 
+* When the user clicks on the One Ring icon on the home screen, the quizgame.html page is loaded. 
+* The quiz consists of 20 questions that randomise at each refresh, to avoid repetition. 
+* The questions have four answer variables, that change colour, depending on if they are correct or incorrect.
+* The questions sit in a box div that is stylized with a black background and gold border. 
+* The 'Next' button appears, through Javascript, everytime an answer is selected. 
 
+<img src="assets/images/correct.png" width=900 height=300>
+<img src="assets/images/incorrect.png" width=900 height=300>
 
+Javascript Examples
 
-<img src="assets/images/about-us-screenshot.png" width=900 height=300>
+<img src="assets/images/javascript_questions.png" width=900 height=300>
+<img src="assets/images/javascript_functions.png" width=900 height=300>
 
 ### Our Bakes 
 
