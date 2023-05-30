@@ -37,7 +37,7 @@ const questions = [{
         },
     ]
 }, {
-    question: "What was the name of the Golden Hall that stood upon the green terrace of Edoras?",
+    question: "What was the name of the Golden Hall at Edoras?",
     answers: [{
             text: "The Great Hall of Thingol",
             correct: false
