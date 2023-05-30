@@ -25,42 +25,50 @@ I wanted the aesthetic of the website to match that of 'The Lord of the Rings' m
 
 * Home Page
 
-<img src ="assets/images/homewireframe.png" width=300 height=300>
+<img src ="assets/images/homepage.png" width=300 height=300>
 
 * Quiz Page
 
-<img src ="assets/images/bakeswireframe.png" width=300 height=300>
+<img src ="assets/images/quizgame.png" width=300 height=300>
 
 * Final Score Page
 
-<img src ="assets/images/contactwireframe.png" width=300 height=300>
+<img src ="assets/images/finalscore.png" width=300 height=300>
 
 * Bonus Page
 
-<img src ="assets/images/contactwireframe.png" width=300 height=300>
+<img src ="assets/images/bonuspage.png" width=300 height=300>
 
 ## Features
 
-* Navigation and Ease of Access
+### Interactive Home Page
+* The Home Page welcomes the user to the quiz site. 
+* It features an '<i>' tag that loads the href to the quizgame.html page.
+* The tag is styled using a ring icon, similar in appearance to the One Ring from the books and films. 
+* The icon was taken from [fontawesome.com](https://fontawesome.com/icons).
+* I was able to animate the icon on fontawesome.com, to make it fade in and out of opacity and pulsate, an ode to the mystical nature of the One Ring. 
 
-### Hamburger Menu
-* I placed a dropdown hamburger menu at the top-right corner of the website. 
-* The menu navigates the user through to the 'Home,' 'Our Bakes,' and "Contact Us' pages. 
-* The menu sections are decorated with icons from [fontawesome.com](https://fontawesome.com/icons).
+<img src="assets/images/ring.png" width=900 height=200>
 
-<img src="assets/images/menu-screenshot.png" width=900 height=200>
+### Background Image
 
-### Header 
+* The background image was taken from [wallpaperaccess.com](https://wallpaperaccess.com/red-leather), a site where you can download royalty-free background images. I wanted to go for a cracked red leather background, similar to that of Bilbo's Journal.
+* The orignal background that I found was too bright and garish. I loaded the background into Adobe Photoshop and toned it down, using the burn tool. 
 
-* The header features the Bakery's logo, along with their tagline 'The Artisan Way, Since 2021.'
-* The tagline and other headings on the site are styled with the 'Courier-New" font family. It is a rustic font that suits the aesthetic of the site and business. 
-* The header also features a Hero image, which is a stock image from [pexels.com](https://www.pexels.com/), that suits the colour scheme of the website.
+Orginal Background 
 
-<img src="assets/images/header-screenshot.png" width=900 height=300>
+<img src="assets/images/originalbackground.jpeg" width=900 height=200>
 
-### About Us Section 
+Edited Final Background 
 
-The 'About Us' section is centered under the Hero Image on the 'Home' page. It gives a brief bit of information on the business and the services that they offer. The 'About Us' section, sits on a styled box div, that's design is based off the company's logo and its colour scheme. 
+<img src="assets/images/quizbackground.jpg" width=900 height=200>
+
+
+### Quiz Game
+
+* When the user clicks on the One Ring icon on the home screen, 
+
+
 
 <img src="assets/images/about-us-screenshot.png" width=900 height=300>
 
