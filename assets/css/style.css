@@ -456,7 +456,7 @@ body {
 
     #sax-btn {
         width: 308px;
-        font-size: 40px;
+        font-size: 36px;
     }
 
     #home-btn {
@@ -526,7 +526,11 @@ body {
 @media screen and (max-width: 390px) and (min-width:375px) {
 
     #sax-btn {
-        font-size: 46px
+        font-size: 40px;
+    }
+
+    #next-button {
+        width: 275px;
     }
 }
 
