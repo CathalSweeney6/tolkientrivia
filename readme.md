@@ -15,11 +15,11 @@ I wanted the aesthetic of the website to match that of 'The Lord of the Rings' m
 
  Original logo.
 
- <img src="assets/images/originallogo.png" width=600 height=400>
+ <img src="assets/images/originallogo.png" width=500 height=400>
 
  Final logo, editied through Adobe Photoshop.
 
- <img src="assets/images/quizlogo.png" width=600 height=400>
+ <img src="assets/images/quizlogo.png" width=300 height=200>
 
 
  ## Final Layout
@@ -49,7 +49,7 @@ I wanted the aesthetic of the website to match that of 'The Lord of the Rings' m
 * The icon was taken from [fontawesome.com](https://fontawesome.com/icons).
 * I was able to animate the icon on fontawesome.com, to make it fade in and out of opacity and pulsate, which is an ode to the mystical nature of the One Ring. 
 
-<img src="assets/images/ring.png" width=900 height=200>
+<img src="assets/images/ring.png" width=400 height=300>
 
 ### Background Image
 
@@ -58,11 +58,11 @@ I wanted the aesthetic of the website to match that of 'The Lord of the Rings' m
 
 Orginal Background 
 
-<img src="assets/images/originalbackground.jpeg" width=900 height=200>
+<img src="assets/images/originalbackground.jpeg" width=600 height=400>
 
 Edited Final Background 
 
-<img src="assets/images/quizbackground.jpg" width=900 height=200>
+<img src="assets/images/quizbackground.jpg" width=600 height=400>
 
 
 ### Quiz Game
@@ -73,13 +73,13 @@ Edited Final Background
 * The questions sit in a box div that is stylized with a black background and gold border. 
 * The 'Next' button appears, through Javascript, everytime an answer is selected. 
 
-<img src="assets/images/correct.png" width=900 height=300>
-<img src="assets/images/incorrect.png" width=900 height=300>
+<img src="assets/images/correct.png" width=600 height=400>
+<img src="assets/images/incorrect.png" width=600 height=400>
 
 Javascript Examples
 
-<img src="assets/images/javascript_questions.png" width=900 height=300>
-<img src="assets/images/javascript_functions.png" width=900 height=300>
+<img src="assets/images/javascript_questions.png" width=800 height=900>
+<img src="assets/images/javascript_functions.png" width=800 height=900>
 
 ### Score Page
 
@@ -87,7 +87,8 @@ Javascript Examples
 * Using javascript, the h1 element that housed the questions, now displays the final score. 
 * The div now also contains two buttons, the first of which loads the 'Bonus page,' whilst the second of which, restarts the game. 
 
-<img src="assets/images/finalscore.png" width=900 height=400>
+<img src="assets/images/finalscore.png" width=600 height=400>
+
 
 ### Bonus Page 
 
@@ -95,7 +96,7 @@ Javascript Examples
 * I picked one of the most famous memes assoicated with 'The Lord of the Rings,' being the ['Gandalf Sax Guy'](https://www.youtube.com/watch?v=G1IbRujko-A) video, which was made famous by the parody YouTube page, ['Teh Lurd of Teh Reings.'](https://www.youtube.com/channel/UCYXpatz5Z4ek0M_5VR-Qt1A)
 * I embeded a gif of the video from [giphy.com](https://giphy.com/gifs/reaction-laughing-lotr-TcdpZwYDPlWXC), and set is as the background image for the Bonus Page. 
 
-<img src="assets/images/bonuspage.png" width=900 height=600>
+<img src="assets/images/bonuspage.png" width=600 height=400>
 
 ## Colour Scheme and Design 
 
@@ -103,20 +104,20 @@ Given that the quiz is based around 'rings,' I wanted to inlude a golden colour 
 
 The correct colour was picked from the green background of the sigil of Rohan.
 
-<img src="assets/images/1280px-Flag_of_the_Kingdom_of_Rohan.svg.png" width=900 height=600>
+<img src="assets/images/1280px-Flag_of_the_Kingdom_of_Rohan.svg.png" width=600 height=400>
 
 The incorrect colour was picked from the red text colour of the Middle Earth Map logo.
 
-<img src="assets/images/LOTRMiddleEarthCrest.png" width=900 height=600>
+<img src="assets/images/LOTRMiddleEarthCrest.png" width=600 height=400>
 
 The background colour of the answer buttons, was picked from the map of Middle Earth. 
 
-<img src="assets/images/me_map.jpeg" width=900 height=600>
+<img src="assets/images/me_map.jpeg" width=600 height=400>
 
 I have created a colour pallete for the colours used on the site, using [coolors.com](https://coolors.com).
 
-<img src="assets/images/tolkienpalette1.png" width=900 height=600>
-<img src="assets/images/tolkienpalette2.png" width=900 height=600>
+<img src="assets/images/tolkienpalette1.png"width=600 height=400>
+<img src="assets/images/tolkienpalette2.png" width=600 height=400>
 
 ## Fonts 
 
@@ -139,7 +140,7 @@ There were only a couple of parse errors when testing the HTML, Javascript and C
 
 I also tested the performance of the website on Google Lighthouse, on Dev-tools. Below is my site's score.
 
-<img src="assets/images/lighthousescore.png" width=600 height=300>
+<img src="assets/images/lighthousescore.png" width=800 height=200>
 
 ## Unresolved Bugs
 
