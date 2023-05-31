@@ -47,7 +47,7 @@ I wanted the aesthetic of the website to match that of 'The Lord of the Rings' m
 * It features an '<i>' tag that loads the href to the quizgame.html page.
 * The tag is styled using a ring icon, similar in appearance to the One Ring from the books and films. 
 * The icon was taken from [fontawesome.com](https://fontawesome.com/icons).
-* I was able to animate the icon on fontawesome.com, to make it fade in and out of opacity and pulsate, an ode to the mystical nature of the One Ring. 
+* I was able to animate the icon on fontawesome.com, to make it fade in and out of opacity and pulsate, which is an ode to the mystical nature of the One Ring. 
 
 <img src="assets/images/ring.png" width=900 height=200>
 
@@ -68,7 +68,7 @@ Edited Final Background
 ### Quiz Game
 
 * When the user clicks on the One Ring icon on the home screen, the quizgame.html page is loaded. 
-* The quiz consists of 20 questions that randomise at each refresh, to avoid repetition. 
+* The quiz consists of 20 questions that randomise at each refresh, to avoid monotony. 
 * The questions have four answer variables, that change colour, depending on if they are correct or incorrect.
 * The questions sit in a box div that is stylized with a black background and gold border. 
 * The 'Next' button appears, through Javascript, everytime an answer is selected. 
@@ -81,50 +81,61 @@ Javascript Examples
 <img src="assets/images/javascript_questions.png" width=900 height=300>
 <img src="assets/images/javascript_functions.png" width=900 height=300>
 
-### Our Bakes 
+### Score Page
 
-* The second page of the website features six of the most popular bakes by the Bakery. 
-* Each bakes are aligned in opposite directions, per-row, along with a short descriptive paragraph in their box divs.
-* The designed box divs are based off the company logo, with the RGB charcoal and orange colors, taken from the logo, using an eyedropper tool. 
+* When all 20 questions are answered, the quizgame page changes to a new layout.
+* Using javascript the h1 element that housed the questions, now displays the final score. 
+* The div now also contains two buttons, the first of which loads the 'Bonus page,' and the second of which, restarts the game. 
 
-<img src="assets/images/ourbakes-screenshot.png" width=900 height=400>
+<img src="assets/images/finalscore.png" width=900 height=400>
 
-### Contact Us 
+### Bonus Page 
 
-* The 'Contact Us' section features a form, that sits over a background stock image from [pexels.com](https://www.pexels.com/), that suits the colour-scheme of the website. 
-* The form is linked to the Code Institute Formdump website. 
+* I wanted to inlude an easter egg to the phenomenon of memes, referencing 'The Lord of the Rings' films, since their release over 20 years ago. 
+* I picked one of the most famous memes assoicated with 'The Lord of the Rings,' being the ['Gandalf Sax Guy'](https://www.youtube.com/watch?v=G1IbRujko-A) video, which was made famous by the parody YouTube page, ['Teh Lurd of Teh Reings'](https://www.youtube.com/channel/UCYXpatz5Z4ek0M_5VR-Qt1A). 
+* I embeded a gif of the video from [giphy.com](https://giphy.com/gifs/reaction-laughing-lotr-TcdpZwYDPlWXC), and set is as the background image for the Bonus Page. 
 
-<img src="assets/images/contact-us-screenshot.png" width=900 height=600>
-
-### Footer 
-
-* The footer features a hyperlink to the Bakery's Instagram page, that opens on a new tab.
-* Below the link, there is a Google Map box with the Bakery's address. 
-
-<img src="assets/images/footer-screenshot.png" width="800" height="200">
+<img src="assets/images/bonuspage.png" width=900 height=600>
 
 ## Colour Scheme and Design 
 
-The colour scheme of the website, was based off the colours that feature in the company's logo. Using [imagecolorpicker.com](https://imagecolorpicker.com), I was able to isolate and identify the RGB values for the different colours that I wanted to use for the website. See the RBG colour palette, below the company logo, created using [coolors.com](https://coolors.com).
+Given that the quiz is based around 'rings,' I wanted to inlude a golden colour somewhere in the website. 'Goldenrod' was the natural choice. I wanted the 'correct' and 'incorrect' button colours to not be generic shades of green and red. I picked their colours using an eyeddropper tool. 
 
-<img src="assets/images/beirbuabakes-logo.png" width=300 height=300>
-<img src="assets/images/palette.png" width=400 height=300>
+The correct colour was picked from the green background of the sigil of Rohan.
+
+<img src="assets/images/1280px-Flag_of_the_Kingdom_of_Rohan.svg.png" width=900 height=600>
+
+The incorrect colour was picked from the red text colour of the Middle Earth Map logo.
+
+<img src="assets/images/LOTRMiddleEarthCrest.png" width=900 height=600>
+
+The background colour of the answer buttons, was picked from the map of Middle Earth. 
+
+<img src="assets/images/me_map.png" width=900 height=600>
+
+I have created a colour pallete for the colours used on the site, using [coolors.com](https://coolors.com).
+
+<img src="assets/images/tolkienpalette1.png" width=900 height=600>
+<img src="assets/images/tolkienpalette2.png" width=900 height=600>
+
+## Fonts 
+
+As mentioned previously, I created the quiz's logo using dafont.com. I chose two fonts for the body. "Instrument Serif' resembled the font used on the old book covers of the trilogy. This font was embeded through ['Google Fonts'](https://fonts.google.com/). I also chose the Labo font, as I believe that it compliments the 'Instrument" font. 
+
 
 ## Testing
 
 I tested my site on Chrome, Safari and Firefox. The site ran smootly on all browsers. 
 
+The background audio autoplayed on all browsers, however, users will have to check that they have autoplay enabled on Safari and Firefox.
+
 The site appeared clear, was easy to use and was legible on all screen sizes. 
 
-The link to Instagram works. 
-
-The form section of the 'Contact Us' section works. See a screenshot from the Code Institute Formdump page, below.
-
-<img src="assets/images/formdump-screenshot.png" width=400 height=300>
+The questions ran smootly without any bugs or glitches. 
 
 ### Validation 
 
-There were only a couple of parse errors when testing the HTML and CSS validation, with the W3Schools validator. These were fixed upon validation. 
+There were only a couple of parse errors when testing the HTML, Javascript and CSS validation, with the W3Schools validator, along with codebeautifully.com. These were fixed upon validation. 
 
 I also tested the performance of the website on Google Lighthouse, on Dev-tools. Below is my site's score.
 

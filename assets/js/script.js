@@ -382,8 +382,8 @@ const questions = [{
 
 // Consts.
 const questionElement = document.getElementById("question");
-const answerButtons = document.getElementById("answer-buttons");
-const nextButton = document.getElementById("next-btn");
+const answerButtons = document.getElementById("answer");
+const nextButton = document.getElementById("next-button");
 
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
