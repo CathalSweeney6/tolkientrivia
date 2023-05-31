@@ -1,3 +1,5 @@
+// Question variables 
+
 const questions = [{
     question: "The Dúnedain were descendants of which race of people from the Second-Age?",
     answers: [{
@@ -113,7 +115,7 @@ const questions = [{
         },
     ]
 }, {
-    question: "What Quenyan name did Saruman the White go by, during his early days in Valinor?",
+    question: "What Quenyan name did Saruman the White go by, in Valinor?",
     answers: [{
             text: "Aiwendil",
             correct: false
@@ -384,10 +386,10 @@ const questions = [{
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer");
 const nextButton = document.getElementById("next-button");
-
+// Shuffles question order.
 let shuffledQuestions, currentQuestionIndex;
 let score = 0;
-
+// Next button function.
 nextButton.addEventListener('click', () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
@@ -395,7 +397,7 @@ nextButton.addEventListener('click', () => {
         startQuiz();
     }
 });
-
+// Next button function.
 function handleNextButton() {
     currentQuestionIndex++;
     if (currentQuestionIndex < questions.length) {
@@ -404,7 +406,7 @@ function handleNextButton() {
         showScore();
     }
 }
-
+// Starts the quiz.
 function startQuiz() {
     resetState();
     score = 0;
@@ -414,7 +416,7 @@ function startQuiz() {
     document.getElementById("highscore").style.display = 'none';
     setNextQuestion();
 }
-
+// Sets the next question.
 function setNextQuestion() {
     resetState();
     localStorage.setItem("latestScore", score);
@@ -426,7 +428,7 @@ function showQuestion() {
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestion;
     questionElement.innerHTML = currentQuestion.question;
-
+    // Adds answer text to each new question.
     currentQuestion.answers.forEach(answer => {
         const button = document.createElement("button");
         button.innerHTML = answer.text;
@@ -439,14 +441,14 @@ function showQuestion() {
     });
 }
 
-
+// Hides the Next button at the start of each question.
 function resetState() {
     nextButton.style.display = "none";
     while (answerButtons.firstChild) {
         answerButtons.removeChild(answerButtons.firstChild);
     }
 }
-
+// Displays correct/incorrect answer on selection.
 function selectAnswer(event) {
     const selectedBtn = event.target;
     const isCorrect = selectedBtn.dataset.correct === "true";
@@ -462,7 +464,7 @@ function selectAnswer(event) {
         button.disabled = true;
     });
 }
-
+// Displays final score.
 function showScore() {
     resetState();
     questionElement.innerHTML = `You scored ${score} / ${questions.length}!`;
@@ -473,5 +475,5 @@ function showScore() {
         saveYourScore.disabled = !username.value;
     });
 }
-
+// Starts the quiz. 
 startQuiz();
