@@ -111,7 +111,7 @@ The incorrect colour was picked from the red text colour of the Middle Earth Map
 
 The background colour of the answer buttons, was picked from the map of Middle Earth. 
 
-<img src="assets/images/me_map.png" width=900 height=600>
+<img src="assets/images/me_map.jpeg" width=900 height=600>
 
 I have created a colour pallete for the colours used on the site, using [coolors.com](https://coolors.com).
 
@@ -139,7 +139,7 @@ There were only a couple of parse errors when testing the HTML, Javascript and C
 
 I also tested the performance of the website on Google Lighthouse, on Dev-tools. Below is my site's score.
 
-<img src="assets/images/lighthouse-screenshot.png" width=600 height=300>
+<img src="assets/images/lighthousescore.png" width=600 height=300>
 
 ## Unresolved Bugs
 
@@ -155,13 +155,15 @@ The site was successfully deployed to Github pages, using the following steps.
 * Click 'Save.'
 * A website link should appear at the top of the refreshed page. 
 
-Here's the link to my site - [Beir Bua Bakes](https://cathalsweeney6.github.io/beirbuabakes/index.html).
+Here's the link to my site - [Tolkien Trivia](https://cathalsweeney6.github.io/tolkientrivia/).
 
 ## Credits 
 
-* The form section was based off of the 'Love Running' coursework project module.
-* The hamburger menu was inspired by a tutorial on w3schools.com - https://www.w3schools.com/howto/howto_js_mobile_navbar.asp.
-* The Hero Image and 'Contact Us' Image are stock images, taken from [pexels.com](https://pexels.com).
-* The company logo and images of the bakes in the 'Our Bakes' page, were provided by my sister, with her permission for me to use them on the site. 
-* The menu and Instagram icons were taken from [fontawesome.com](https://fontawesome.com).
+* The quiz layout was inspired by the following [YouTube tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8), which I followed when creating the site.
+* The background music was added and coded, by following a tutorial on HTML audio on [w3schools.com](https://www.w3schools.com/html/html5_audio.asp).
+* The background music on the home page is royalty free music taken from this [YouTube Link]().
+* The background music on the quiz page is royalty free music taken from this [YouTube Link]().
+* The background music on the bonus page was taken from [voicemod.net](https://tuna.voicemod.net/sound/1efd65cc-7930-4b19-880b-b605458db7a9).
+* The logo was created using [dafont.com](https://www.dafont.com/ringbearer.font).
+* The 'One Ring' icon was taken from [fontawesome.com](https://fontawesome.com).
 * All fonts, along with their variations and styles on this site, were priorly tested on [Google Fonts](https://fonts.google.com/).
