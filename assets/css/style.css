@@ -206,7 +206,7 @@ body {
     margin: 20px auto 0;
     cursor: pointer;
     display: block;
-    margin-top: 594px;
+    margin-top: 574px;
 }
 
 
@@ -253,16 +253,13 @@ body {
 
 .gandalf {
     background-image: url(https://media.tenor.com/VOdWjm2zbEAAAAAC/gandalf-sax-guy.gif);
-    height: 62vh;
+    height: 100vh;
     width: 100vw;
     background-position: center;
 }
 
 /* Media queries */
 
-@media screen and (max-width: 1600px) and (min-width:1440px) {
-
-}
 
 @media screen and (max-width: 768px) {
 
@@ -271,7 +268,7 @@ body {
     }
 
     .gandalf {
-        height: 40vh;
+        height: 49vh;
         background-size: cover;
     }
 }
@@ -376,7 +373,7 @@ body {
     }
 
     .gandalf {
-        height: 24vh;
+        height: 26vh;
         overflow-x: hidden;
         overflow-y: hidden;
     }
@@ -395,7 +392,15 @@ body {
 @media screen and (max-width: 375px) and (min-width:360px) {
 
     .gandalf {
-        height: 21vh;
+        height: 23vh;
+    }
+
+    #home-btn {
+        width: 330px;
+    }
+
+    #sax-btn {
+        font-size: 40px;
     }
 }
 
@@ -431,6 +436,10 @@ body {
 
     #sax-btn {
         width: 308px;
+    }
+
+    #home-btn {
+        width: 280px;
     }
 }
 
@@ -485,6 +494,11 @@ body {
    #welcome {
     font-size: 18px;
     }
+
+    #sax-btn {
+        width: 250px;
+        font-size: 45px;
+    }
 }
 
 @media screen and (max-width: 390px) and (min-width:375px) {
@@ -510,11 +524,16 @@ body {
     .welcome-area,
     .game-area,
     .score-area {
-        width: 100%;
+        width: 102%;
     }
 
     #welcome {
         font-size: 16px;
+        }
+
+        #sax-btn {
+            width: 258px;
+            font-size: 36px;
         }
 }
 
@@ -557,12 +576,13 @@ body {
     
 
     .gandalf {
-        height: 17vh;
+        height: 19vh;
         overflow-x: hidden;
         overflow-y: hidden;
     }
 
     #home-btn {
-        width: 278px;
+        width: 256px;
+        margin-top: 504px;
     }
 }
