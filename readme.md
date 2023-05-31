@@ -1,7 +1,7 @@
 # Tolkien Trivia 
- 'Tolkien Trivia' is a quiz website that's questions are focused on the mythos and lore of J.R.R. Tolkien's Middle Earth
+ 'Tolkien Trivia' is a quiz website that's questions are focused on the mythos and lore of J.R.R. Tolkien's Middle Earth.
 
-The site is a fun, interactive experience, that is very easy to navigate through. It consists of three pages, the 'Welcome page' page, the 'Quiz' page, and a 'Bonus Prize' page at the end of the quiz.
+The site is a fun, interactive experience, that is very easy to navigate through. It consists of three pages, the 'Welcome' page, the 'Quiz' page, and a 'Bonus Prize' page at the end of the quiz.
 
 <img src="assets/images/quiz_amiresponsive_screenshot.png" width=600 height=400>
 
@@ -44,7 +44,7 @@ I wanted the aesthetic of the website to match that of 'The Lord of the Rings' m
 
 ### Interactive Home Page
 * The Home Page welcomes the user to the quiz site. 
-* It features an '<i>' tag that loads the href to the quizgame.html page.
+* It features an Icon tag that loads the href to the quizgame.html page.
 * The tag is styled using a ring icon, similar in appearance to the One Ring from the books and films. 
 * The icon was taken from [fontawesome.com](https://fontawesome.com/icons).
 * I was able to animate the icon on fontawesome.com, to make it fade in and out of opacity and pulsate, which is an ode to the mystical nature of the One Ring. 
@@ -53,7 +53,7 @@ I wanted the aesthetic of the website to match that of 'The Lord of the Rings' m
 
 ### Background Image
 
-* The background image was taken from [wallpaperaccess.com](https://wallpaperaccess.com/red-leather), a site where you can download royalty-free background images. I wanted to go for a cracked red leather background, similar to that of Bilbo's Journal.
+* The background image was taken from [wallpaperaccess.com](https://wallpaperaccess.com/red-leather), a site where you can download royalty-free background images. I wanted to go for a cracked red leather background, similar in style to Bilbo's Journal.
 * The orignal background that I found was too bright and garish. I loaded the background into Adobe Photoshop and toned it down, using the burn tool. 
 
 Orginal Background 
@@ -84,15 +84,15 @@ Javascript Examples
 ### Score Page
 
 * When all 20 questions are answered, the quizgame page changes to a new layout.
-* Using javascript the h1 element that housed the questions, now displays the final score. 
-* The div now also contains two buttons, the first of which loads the 'Bonus page,' and the second of which, restarts the game. 
+* Using javascript, the h1 element that housed the questions, now displays the final score. 
+* The div now also contains two buttons, the first of which loads the 'Bonus page,' whilst the second of which, restarts the game. 
 
 <img src="assets/images/finalscore.png" width=900 height=400>
 
 ### Bonus Page 
 
 * I wanted to inlude an easter egg to the phenomenon of memes, referencing 'The Lord of the Rings' films, since their release over 20 years ago. 
-* I picked one of the most famous memes assoicated with 'The Lord of the Rings,' being the ['Gandalf Sax Guy'](https://www.youtube.com/watch?v=G1IbRujko-A) video, which was made famous by the parody YouTube page, ['Teh Lurd of Teh Reings'](https://www.youtube.com/channel/UCYXpatz5Z4ek0M_5VR-Qt1A). 
+* I picked one of the most famous memes assoicated with 'The Lord of the Rings,' being the ['Gandalf Sax Guy'](https://www.youtube.com/watch?v=G1IbRujko-A) video, which was made famous by the parody YouTube page, ['Teh Lurd of Teh Reings.'](https://www.youtube.com/channel/UCYXpatz5Z4ek0M_5VR-Qt1A)
 * I embeded a gif of the video from [giphy.com](https://giphy.com/gifs/reaction-laughing-lotr-TcdpZwYDPlWXC), and set is as the background image for the Bonus Page. 
 
 <img src="assets/images/bonuspage.png" width=900 height=600>
@@ -120,7 +120,7 @@ I have created a colour pallete for the colours used on the site, using [coolors
 
 ## Fonts 
 
-As mentioned previously, I created the quiz's logo using dafont.com. I chose two fonts for the body. "Instrument Serif' resembled the font used on the old book covers of the trilogy. This font was embeded through ['Google Fonts'](https://fonts.google.com/). I also chose the Labo font, as I believe that it compliments the 'Instrument" font. 
+As mentioned previously, I created the quiz's logo using dafont.com. I chose two fonts for the body. "Instrument Serif' resembled the font used on the old book covers of the trilogy. This font was embeded through ['Google Fonts'](https://fonts.google.com/). I also chose the 'Labo' font, as I believe that it compliments the 'Instrument" font. 
 
 
 ## Testing
@@ -135,7 +135,7 @@ The questions ran smootly without any bugs or glitches.
 
 ### Validation 
 
-There were only a couple of parse errors when testing the HTML, Javascript and CSS validation, with the W3Schools validator, along with codebeautifully.com. These were fixed upon validation. 
+There were only a couple of parse errors when testing the HTML, Javascript and CSS validation, with the W3Schools validator, along with codebeautifully.org. These were fixed upon validation. 
 
 I also tested the performance of the website on Google Lighthouse, on Dev-tools. Below is my site's score.
 
@@ -166,4 +166,5 @@ Here's the link to my site - [Tolkien Trivia](https://cathalsweeney6.github.io/t
 * The background music on the bonus page was taken from [voicemod.net](https://tuna.voicemod.net/sound/1efd65cc-7930-4b19-880b-b605458db7a9).
 * The logo was created using [dafont.com](https://www.dafont.com/ringbearer.font).
 * The 'One Ring' icon was taken from [fontawesome.com](https://fontawesome.com).
+* the gif on the 'Bonus page,' was taken from [giphy.com](https://giphy.com/gifs/reaction-laughing-lotr-TcdpZwYDPlWXC).
 * All fonts, along with their variations and styles on this site, were priorly tested on [Google Fonts](https://fonts.google.com/).
