@@ -94,7 +94,7 @@ Javascript Examples
 
 * I wanted to include an easter egg to the phenomenon of memes, referencing 'The Lord of the Rings' films, since their release over 20 years ago. 
 * I picked one of the most famous memes associated with 'The Lord of the Rings,' the ['Gandalf Sax Guy'](https://www.youtube.com/watch?v=G1IbRujko-A) video, which was made famous by the parody YouTube page, ['Teh Lurd of Teh Reings.'](https://www.youtube.com/channel/UCYXpatz5Z4ek0M_5VR-Qt1A)
-* I embedded a gif of the video from [giphy.com](https://giphy.com/gifs/reaction-laughing-lotr-TcdpZwYDPlWXC), and set is as the background image for the Bonus Page. 
+* I embedded a gif of the video from [giphy.com](https://giphy.com/gifs/reaction-laughing-lotr-TcdpZwYDPlWXC), and set it as the background image for the Bonus Page. 
 
 <img src="assets/images/bonuspage.png" width=600 height=400>
 
@@ -162,10 +162,10 @@ Here's the link to my site - [Tolkien Trivia](https://cathalsweeney6.github.io/t
 
 * The quiz layout was inspired by the following [YouTube tutorial](https://www.youtube.com/watch?v=PBcqGxrr9g8), which I followed when creating the site.
 * The background music was added and coded, by following a tutorial on HTML audio on [w3schools.com](https://www.w3schools.com/html/html5_audio.asp).
-* The background music on the home page is royalty-free music taken from this [YouTube Link]().
-* The background music on the quiz page is royalty-free music taken from this [YouTube Link]().
+* The background music on the home page is royalty-free music taken from this [YouTube Link](https://www.youtube.com/watch?v=adbrzBM2sfM).
+* The background music on the quiz page is royalty-free music taken from this [YouTube Link](https://www.youtube.com/watch?v=qfMKIRFXgJs).
 * The background music on the bonus page was taken from [voicemod.net](https://tuna.voicemod.net/sound/1efd65cc-7930-4b19-880b-b605458db7a9).
 * The logo was created using [dafont.com](https://www.dafont.com/ringbearer.font).
 * The 'One Ring' icon was taken from [fontawesome.com](https://fontawesome.com).
-* the gif on the 'Bonus page,' was taken from [giphy.com](https://giphy.com/gifs/reaction-laughing-lotr-TcdpZwYDPlWXC).
+* The gif on the 'Bonus page,' was taken from [giphy.com](https://giphy.com/gifs/reaction-laughing-lotr-TcdpZwYDPlWXC).
 * All fonts, along with their variations and styles on this site, were priorly tested on [Google Fonts](https://fonts.google.com/).
