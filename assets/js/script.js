@@ -286,7 +286,7 @@ const questions = [{
         },
     ]
 }, {
-    question: "Which Númenórean founded the kingdom of Gondor?",
+    question: "Who was the original wielder of the longsword Narsil?",
     answers: [{
             text: "Isildur",
             correct: false
